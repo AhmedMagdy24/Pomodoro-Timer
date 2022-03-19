@@ -43,7 +43,7 @@ function startTimer(time) {
             allowedTime--
             showTime(allowedTime)
         }
-    }, 1000);
+    }, 100);
 }
 
 
