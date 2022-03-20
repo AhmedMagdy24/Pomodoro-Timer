@@ -47,14 +47,15 @@ function startTimer(time) {
 }
 
 
-// the way we display the time 
+// the way the time being displayed 
 function showTime(allowedTime) {
     let minutes = pad(Math.floor(allowedTime / 60))
     let seconds = pad(allowedTime%60)
     let time = `${minutes}:${seconds}`
+    timeDisplay.innerHTML = time
 // document.title used to display the time on the taskbar 
     document.title = time 
-    timeDisplay.innerHTML = time
+    
 }
 
 function pad(number) {
